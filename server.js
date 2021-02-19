@@ -10,9 +10,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.get('/app-ads.txt', function(req, res) {
-    res.sendFile(path.join(__dirname + '/app-ads.txt'));
-});
 
 app.listen(PORT, function() {
     console.log('Server is running on PORT:',PORT);
